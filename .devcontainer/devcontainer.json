@@ -1,0 +1,23 @@
+{
+  "name": "Codespace",
+
+  "image": "mcr.microsoft.com/devcontainers/base:buster",
+
+  "features": {
+    "ghcr.io/devcontainers/features/git:latest": {},
+    "ghcr.io/devcontainers/features/git-lfs:latest": {},
+    "ghcr.io/devcontainers/features/github-cli:latest": {},
+    "./node": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ionutvmi.path-autocomplete"
+      ]
+    }
+  },
+  
+  "postCreateCommand": "sudo mkdir /main && sudo chmod 777 /main"
+}

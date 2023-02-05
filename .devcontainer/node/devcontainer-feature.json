@@ -1,0 +1,11 @@
+{
+  "id": "node",
+  "version": "1.0.0",
+  "name": "Node.js",
+  "description": "Installs Node.js with nvm.",
+  "containerEnv": {
+    "NVM_DIR": "/usr/local/share/nvm",
+    "NVM_SYMLINK_CURRENT": "true",
+    "PATH": "/usr/local/share/nvm/current/bin:${PATH}"
+  }
+}
